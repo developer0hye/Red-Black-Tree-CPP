@@ -18,7 +18,7 @@ Red-Black Tree 는 특이하게도 각 노드의 색상을 저장하기 위한 c
 - 모든 노드의 색상은 red 또는 black 이다.
 - root 노드와 모든 leaf 노드의 색상은 black 이다.
 - 만약 어떤 노드의 색상이 red 라면, 해당 노드의 부모 색상은 black 이다.
-- 어떤 노드 x 에서 descendant(x 의 자식 노드) 노드까지의 경로에는 동일한 수의 black 노드를 가진다.
+- 어떤 노드 x 에서 descendant(x 의 자식 노드이자 리프 노드) 노드까지의 경로에는 동일한 수의 black 노드를 가진다.
 
 
 ## Applications

@@ -12,7 +12,7 @@ Balanced search tree 는 n 개의 노드(=데이터)를 저장하는 search tree
 
 ## Why is it important that a binary tree be balanced?
 
-아래와 같은 Binary tree 가 있다고 생각해보자. 이렇게 한 쪽으로 치우친 트리(모든 노드의 자식 노드 수가 1인 노드)를 우아한 전문용어로 skewed tree 라고한다.
+아래와 같은 Binary tree 가 있다고 생각해보자. 이렇게 한 쪽으로 치우친 트리(모든 노드의 자식 노드 수가 1인 노드)를 우아한 전문용어로 Skewed tree 라고한다.
 
 ```
   A

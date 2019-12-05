@@ -32,12 +32,16 @@ Balanced search tree 는 n 개의 노드(=데이터)를 저장하는 search tree
 
 Red-Black Tree 는 각 노드의 색상(red or black)을 저장하기 위한 color field 를 가진다.
 
-자세한 속성은 아래와 같다.
-- 모든 노드의 색상은 red 또는 black 이다.
-- root 노드와 모든 leaf 노드의 색상은 black 이다.
-- 만약 어떤 노드의 색상이 red 라면, 해당 노드의 부모 색상은 black 이다.
-- 어떤 노드 x 에서 descendant(x 의 자식 노드이자 leaf 인 노드) 노드까지의 경로에는 동일한 수의 black 노드가 존재한다.
+자세한 특징은 아래와 같다.
+- 1. 모든 노드의 색상은 red 또는 black 이다.
+- 2. root 노드와 모든 leaf 노드의 색상은 black 이다.
+- 3. 만약 어떤 노드의 색상이 red 라면, 해당 노드의 부모 색상은 black 이다.
+- 4. 색상이 red 인 노드의 자식 노드는 black 노드이다. = red 노드가 연달아서 올 수 없다.
+- 5. 어떤 노드 x 에서 descendant(x 의 자식 노드이자 leaf 인 노드) 노드까지의 경로에는 동일한 수의 black 노드가 존재한다.
 
+Property 1~4 까지만 보면 기존 Binary Search Tree 에 색상 조건만 추가해주면 될 것 같다. 문제는 Property 5. 어떻게 구현해야 5번 조건을 만족할까?? 아마 가장 중요한 특징은 5. 인 것 같다.
+
+아무튼, 위의 5 가지 특징으로 인하여 Red-Black Tree 의 높이는 O(lg n) 으로 바운드된다.
 
 ## Applications
 
